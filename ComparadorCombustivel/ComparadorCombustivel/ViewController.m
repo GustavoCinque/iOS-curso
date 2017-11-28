@@ -33,8 +33,12 @@
 
 - (IBAction)calcular:(id)sender {
     
-    CGFloat precoAlcool = self.precoAlcool.text.floatValue;
-    CGFloat precoGasolina = self.precoGasolina.text.floatValue;
+    NSString *valorAlcool = [self.precoAlcool.text stringByReplacingOccurrencesOfString:@"," withString:@"."];
+    
+    NSString *valorGasolina = [self.precoGasolina.text stringByReplacingOccurrencesOfString:@"," withString:@"."];
+    
+    CGFloat precoAlcool = valorAlcool.floatValue;
+    CGFloat precoGasolina = valorGasolina.floatValue;
     
     CGFloat resultado = precoAlcool/precoGasolina;
     
