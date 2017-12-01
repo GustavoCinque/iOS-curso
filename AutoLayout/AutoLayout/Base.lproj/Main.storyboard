@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,21 +21,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oM1-Mz-GW4">
-                                <rect key="frame" x="127" y="318.5" width="121" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oM1-Mz-GW4">
+                                <rect key="frame" x="113" y="287" width="150" height="93"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="0n4-Oc-eb3"/>
+                                    <constraint firstAttribute="width" constant="150" id="Ef7-uA-anl"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="oM1-Mz-GW4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="06A-fe-lWh"/>
-                            <constraint firstItem="oM1-Mz-GW4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F0b-QX-Qnz"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="oM1-Mz-GW4" secondAttribute="trailing" constant="111" id="Rla-7s-U6L"/>
-                            <constraint firstItem="oM1-Mz-GW4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="111" id="UTB-Cu-4Bb"/>
-                            <constraint firstItem="oM1-Mz-GW4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="298.5" id="lEP-PI-j3M"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oM1-Mz-GW4" secondAttribute="bottom" constant="318.5" id="wVs-7S-yOz"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
