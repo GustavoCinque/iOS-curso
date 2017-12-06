@@ -13,6 +13,7 @@
 		AD3130EC1FD719F8001352E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD3130EA1FD719F8001352E7 /* Main.storyboard */; };
 		AD3130EE1FD719F8001352E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD3130ED1FD719F8001352E7 /* Assets.xcassets */; };
 		AD3130F11FD719F8001352E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD3130EF1FD719F8001352E7 /* LaunchScreen.storyboard */; };
+		AD3130FA1FD71A8F001352E7 /* ViewControllerResultado.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3130F91FD71A8F001352E7 /* ViewControllerResultado.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		AD3130ED1FD719F8001352E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD3130F01FD719F8001352E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD3130F21FD719F8001352E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD3130F81FD71A8F001352E7 /* ViewControllerResultado.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerResultado.h; sourceTree = "<group>"; };
+		AD3130F91FD71A8F001352E7 /* ViewControllerResultado.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerResultado.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				AD3130E51FD719F8001352E7 /* AppDelegate.m */,
 				AD3130E71FD719F8001352E7 /* ViewController.h */,
 				AD3130E81FD719F8001352E7 /* ViewController.m */,
+				AD3130F81FD71A8F001352E7 /* ViewControllerResultado.h */,
+				AD3130F91FD71A8F001352E7 /* ViewControllerResultado.m */,
 				AD3130EA1FD719F8001352E7 /* Main.storyboard */,
 				AD3130ED1FD719F8001352E7 /* Assets.xcassets */,
 				AD3130EF1FD719F8001352E7 /* LaunchScreen.storyboard */,
@@ -152,6 +157,7 @@
 			files = (
 				AD3130E91FD719F8001352E7 /* ViewController.m in Sources */,
 				AD3130E61FD719F8001352E7 /* AppDelegate.m in Sources */,
+				AD3130FA1FD71A8F001352E7 /* ViewControllerResultado.m in Sources */,
 				AD3130E31FD719F8001352E7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
