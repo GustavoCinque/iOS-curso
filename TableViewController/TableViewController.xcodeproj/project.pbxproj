@@ -13,6 +13,7 @@
 		AD3131121FD731D6001352E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD3131101FD731D6001352E7 /* Main.storyboard */; };
 		AD3131141FD731D6001352E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD3131131FD731D6001352E7 /* Assets.xcassets */; };
 		AD3131171FD731D6001352E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD3131151FD731D6001352E7 /* LaunchScreen.storyboard */; };
+		AD3131201FD7378B001352E7 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD31311F1FD7378B001352E7 /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		AD3131131FD731D6001352E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD3131161FD731D6001352E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD3131181FD731D6001352E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD31311E1FD7378B001352E7 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		AD31311F1FD7378B001352E7 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				AD3131151FD731D6001352E7 /* LaunchScreen.storyboard */,
 				AD3131181FD731D6001352E7 /* Info.plist */,
 				AD3131071FD731D6001352E7 /* Supporting Files */,
+				AD31311E1FD7378B001352E7 /* TableViewController.h */,
+				AD31311F1FD7378B001352E7 /* TableViewController.m */,
 			);
 			path = TableViewController;
 			sourceTree = "<group>";
@@ -153,6 +158,7 @@
 				AD31310F1FD731D6001352E7 /* ViewController.m in Sources */,
 				AD31310C1FD731D6001352E7 /* AppDelegate.m in Sources */,
 				AD3131091FD731D6001352E7 /* main.m in Sources */,
+				AD3131201FD7378B001352E7 /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
