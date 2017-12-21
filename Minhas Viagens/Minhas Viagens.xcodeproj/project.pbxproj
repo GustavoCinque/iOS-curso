@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD28AE081FEB054E0016F3BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD28AE071FEB054E0016F3BC /* main.m */; };
+		AD28AE0B1FEB054E0016F3BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD28AE0A1FEB054E0016F3BC /* AppDelegate.m */; };
+		AD28AE111FEB054E0016F3BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD28AE0F1FEB054E0016F3BC /* Main.storyboard */; };
+		AD28AE141FEB054E0016F3BC /* Minhas_Viagens.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD28AE121FEB054E0016F3BC /* Minhas_Viagens.xcdatamodeld */; };
+		AD28AE161FEB054E0016F3BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD28AE151FEB054E0016F3BC /* Assets.xcassets */; };
+		AD28AE191FEB054E0016F3BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD28AE171FEB054E0016F3BC /* LaunchScreen.storyboard */; };
+		AD97ACF91FEB0B1A006F7DE2 /* MapaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD97ACF61FEB0B1A006F7DE2 /* MapaViewController.m */; };
+		AD97ACFA1FEB0B1A006F7DE2 /* ViagensViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD97ACF81FEB0B1A006F7DE2 /* ViagensViewController.m */; };
+		ADF9F95E1FEB07F50036627C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADF9F95D1FEB07F50036627C /* MapKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AD28AE031FEB054E0016F3BC /* Minhas Viagens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Minhas Viagens.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD28AE071FEB054E0016F3BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AD28AE091FEB054E0016F3BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AD28AE0A1FEB054E0016F3BC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AD28AE101FEB054E0016F3BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD28AE131FEB054E0016F3BC /* Minhas_Viagens.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Minhas_Viagens.xcdatamodel; sourceTree = "<group>"; };
+		AD28AE151FEB054E0016F3BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD28AE181FEB054E0016F3BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AD28AE1A1FEB054E0016F3BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD97ACEE1FEB0944006F7DE2 /* Viagem+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Viagem+CoreDataClass.h"; path = "Minhas Viagens/Model/Viagem+CoreDataClass.h"; sourceTree = "<group>"; };
+		AD97ACEF1FEB0944006F7DE2 /* Viagem+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Viagem+CoreDataClass.m"; path = "Minhas Viagens/Model/Viagem+CoreDataClass.m"; sourceTree = "<group>"; };
+		AD97ACF01FEB0944006F7DE2 /* Viagem+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Viagem+CoreDataProperties.h"; path = "Minhas Viagens/Model/Viagem+CoreDataProperties.h"; sourceTree = "<group>"; };
+		AD97ACF11FEB0944006F7DE2 /* Viagem+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Viagem+CoreDataProperties.m"; path = "Minhas Viagens/Model/Viagem+CoreDataProperties.m"; sourceTree = "<group>"; };
+		AD97ACF51FEB0B1A006F7DE2 /* MapaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapaViewController.h; sourceTree = "<group>"; };
+		AD97ACF61FEB0B1A006F7DE2 /* MapaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapaViewController.m; sourceTree = "<group>"; };
+		AD97ACF71FEB0B1A006F7DE2 /* ViagensViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViagensViewController.h; sourceTree = "<group>"; };
+		AD97ACF81FEB0B1A006F7DE2 /* ViagensViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViagensViewController.m; sourceTree = "<group>"; };
+		ADF9F95D1FEB07F50036627C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD28AE001FEB054E0016F3BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADF9F95E1FEB07F50036627C /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD28ADFA1FEB054E0016F3BC = {
+			isa = PBXGroup;
+			children = (
+				AD97ACEE1FEB0944006F7DE2 /* Viagem+CoreDataClass.h */,
+				AD97ACEF1FEB0944006F7DE2 /* Viagem+CoreDataClass.m */,
+				AD97ACF01FEB0944006F7DE2 /* Viagem+CoreDataProperties.h */,
+				AD97ACF11FEB0944006F7DE2 /* Viagem+CoreDataProperties.m */,
+				AD28AE051FEB054E0016F3BC /* Minhas Viagens */,
+				AD28AE041FEB054E0016F3BC /* Products */,
+				ADF9F95C1FEB07F50036627C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AD28AE041FEB054E0016F3BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD28AE031FEB054E0016F3BC /* Minhas Viagens.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD28AE051FEB054E0016F3BC /* Minhas Viagens */ = {
+			isa = PBXGroup;
+			children = (
+				AD97AD021FEB0B34006F7DE2 /* Component */,
+				AD97ACF41FEB0B1A006F7DE2 /* Controller */,
+				AD97ACEA1FEB08E0006F7DE2 /* Model */,
+				AD28AE091FEB054E0016F3BC /* AppDelegate.h */,
+				AD28AE0A1FEB054E0016F3BC /* AppDelegate.m */,
+				AD28AE0F1FEB054E0016F3BC /* Main.storyboard */,
+				AD28AE151FEB054E0016F3BC /* Assets.xcassets */,
+				AD28AE171FEB054E0016F3BC /* LaunchScreen.storyboard */,
+				AD28AE1A1FEB054E0016F3BC /* Info.plist */,
+				AD28AE121FEB054E0016F3BC /* Minhas_Viagens.xcdatamodeld */,
+				AD28AE061FEB054E0016F3BC /* Supporting Files */,
+			);
+			path = "Minhas Viagens";
+			sourceTree = "<group>";
+		};
+		AD28AE061FEB054E0016F3BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD28AE071FEB054E0016F3BC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD97ACEA1FEB08E0006F7DE2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AD97ACF41FEB0B1A006F7DE2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AD97ACF51FEB0B1A006F7DE2 /* MapaViewController.h */,
+				AD97ACF61FEB0B1A006F7DE2 /* MapaViewController.m */,
+				AD97ACF71FEB0B1A006F7DE2 /* ViagensViewController.h */,
+				AD97ACF81FEB0B1A006F7DE2 /* ViagensViewController.m */,
+			);
+			name = Controller;
+			path = "Minhas Viagens/Controller";
+			sourceTree = SOURCE_ROOT;
+		};
+		AD97AD021FEB0B34006F7DE2 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		ADF9F95C1FEB07F50036627C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADF9F95D1FEB07F50036627C /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD28AE021FEB054E0016F3BC /* Minhas Viagens */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD28AE1D1FEB054E0016F3BC /* Build configuration list for PBXNativeTarget "Minhas Viagens" */;
+			buildPhases = (
+				AD28ADFF1FEB054E0016F3BC /* Sources */,
+				AD28AE001FEB054E0016F3BC /* Frameworks */,
+				AD28AE011FEB054E0016F3BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Minhas Viagens";
+			productName = "Minhas Viagens";
+			productReference = AD28AE031FEB054E0016F3BC /* Minhas Viagens.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD28ADFB1FEB054E0016F3BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Cast Group";
+				TargetAttributes = {
+					AD28AE021FEB054E0016F3BC = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AD28ADFE1FEB054E0016F3BC /* Build configuration list for PBXProject "Minhas Viagens" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD28ADFA1FEB054E0016F3BC;
+			productRefGroup = AD28AE041FEB054E0016F3BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD28AE021FEB054E0016F3BC /* Minhas Viagens */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD28AE011FEB054E0016F3BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD28AE191FEB054E0016F3BC /* LaunchScreen.storyboard in Resources */,
+				AD28AE161FEB054E0016F3BC /* Assets.xcassets in Resources */,
+				AD28AE111FEB054E0016F3BC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD28ADFF1FEB054E0016F3BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD97ACF91FEB0B1A006F7DE2 /* MapaViewController.m in Sources */,
+				AD28AE0B1FEB054E0016F3BC /* AppDelegate.m in Sources */,
+				AD28AE081FEB054E0016F3BC /* main.m in Sources */,
+				AD28AE141FEB054E0016F3BC /* Minhas_Viagens.xcdatamodeld in Sources */,
+				AD97ACFA1FEB0B1A006F7DE2 /* ViagensViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AD28AE0F1FEB054E0016F3BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD28AE101FEB054E0016F3BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AD28AE171FEB054E0016F3BC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD28AE181FEB054E0016F3BC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD28AE1B1FEB054E0016F3BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AD28AE1C1FEB054E0016F3BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD28AE1E1FEB054E0016F3BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Minhas Viagens/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.castgroup.Minhas-Viagens";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AD28AE1F1FEB054E0016F3BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Minhas Viagens/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.castgroup.Minhas-Viagens";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD28ADFE1FEB054E0016F3BC /* Build configuration list for PBXProject "Minhas Viagens" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD28AE1B1FEB054E0016F3BC /* Debug */,
+				AD28AE1C1FEB054E0016F3BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD28AE1D1FEB054E0016F3BC /* Build configuration list for PBXNativeTarget "Minhas Viagens" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD28AE1E1FEB054E0016F3BC /* Debug */,
+				AD28AE1F1FEB054E0016F3BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AD28AE121FEB054E0016F3BC /* Minhas_Viagens.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AD28AE131FEB054E0016F3BC /* Minhas_Viagens.xcdatamodel */,
+			);
+			currentVersion = AD28AE131FEB054E0016F3BC /* Minhas_Viagens.xcdatamodel */;
+			path = Minhas_Viagens.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AD28ADFB1FEB054E0016F3BC /* Project object */;
+}

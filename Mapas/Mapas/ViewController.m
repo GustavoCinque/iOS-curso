@@ -27,6 +27,32 @@
     [self.locationManager requestWhenInUseAuthorization];
     [self.locationManager startUpdatingLocation];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    self.latitude.text = @"";
+    self.longitude.text = @"";
+    self.endereco.text = @"";
+    UILongPressGestureRecognizer *gesture  = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(inserirAnotacao:)];
+    gesture.minimumPressDuration = 1;
+    [self.mapa addGestureRecognizer:gesture];
+
+}
+
+- (void) inserirAnotacao:(UILongPressGestureRecognizer*)gesture{
+    
+    if (gesture.state == UIGestureRecognizerStateBegan) {
+        
+        CGPoint pontoSelecionado = [gesture locationInView:self.mapa];
+        CLLocationCoordinate2D coordenadas = [self.mapa convertPoint:pontoSelecionado toCoordinateFromView:self.mapa];
+        
+        MKPointAnnotation *anotacao = [MKPointAnnotation new];
+        anotacao.coordinate = coordenadas;
+        anotacao.title = @"Aula iOS Mapas";
+        
+        [self.mapa addAnnotation:anotacao];
+        
+    }
+    
 }
 
 
@@ -39,23 +65,18 @@
 
     CLLocation *userLocation = locations.lastObject;
     
+    self.velocidade.text = @"";
     if(userLocation.speed > 0) {
-        NSLog(@"Velocidade %f \n", userLocation.speed);
+        self.velocidade.text = [NSNumber numberWithInt:userLocation.speed].stringValue;
     }
     
     [[CLGeocoder new] reverseGeocodeLocation:userLocation completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
         CLPlacemark *local = placemarks.firstObject;
-        
-        
-        NSLog(@"thoroughtfare: %@ \n", local.thoroughfare);
-        NSLog(@"subthoroughtfare: %@ \n", local.subThoroughfare);
-        NSLog(@"locality: %@ \n", local.locality);
-        NSLog(@"sublocality: %@ \n", local.subLocality);
-        NSLog(@"postalCode: %@ \n", local.postalCode);
-        NSLog(@"country: %@ \n", local.country);
-        NSLog(@"administrativeArea: %@ \n", local.administrativeArea);
-        NSLog(@"subAdministrativeArea: %@ \n", local.subAdministrativeArea);
+        self.endereco.text = local.thoroughfare;
     }];
+    
+    self.latitude.text = [NSNumber numberWithDouble:userLocation.coordinate.latitude].stringValue;
+    self.longitude.text = [NSNumber numberWithDouble:userLocation.coordinate.longitude].stringValue;
     
     [self.mapa setRegion:(MKCoordinateRegionMake(userLocation.coordinate, (MKCoordinateSpanMake(0.1, 0.1))))];
 }

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17C88" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="XBi-2Q-bjb">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Minhas Viagens-->
+        <scene sceneID="xRe-Zt-G7D">
+            <objects>
+                <tableViewController id="Fsu-C3-EcH" customClass="ViagensViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="XbO-eV-n2e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="viagemCell" textLabel="W9Y-0I-Sxm" style="IBUITableViewCellStyleDefault" id="1aG-92-ybQ">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1aG-92-ybQ" id="o3t-jw-W8O">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="W9Y-0I-Sxm">
+                                            <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="6ur-Od-J3T" kind="show" identifier="segueCell" id="Zbr-yH-H25"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Fsu-C3-EcH" id="pIx-og-gea"/>
+                            <outlet property="delegate" destination="Fsu-C3-EcH" id="rkw-qq-xVW"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Minhas Viagens" id="Dh9-9H-ETJ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Lcf-ED-7AK">
+                            <connections>
+                                <segue destination="6ur-Od-J3T" kind="show" id="nEQ-Tv-CFf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HLS-ny-MUK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="375" y="115"/>
+        </scene>
+        <!--Mapa View Controller-->
+        <scene sceneID="ie4-EQ-fPD">
+            <objects>
+                <viewController id="6ur-Od-J3T" customClass="MapaViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8Iy-3I-7gV"/>
+                        <viewControllerLayoutGuide type="bottom" id="GVl-iG-a51"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="niA-9y-PqU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="1oO-6P-yKS">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1oO-6P-yKS" firstAttribute="top" secondItem="8Iy-3I-7gV" secondAttribute="bottom" id="CbW-d6-6WQ"/>
+                            <constraint firstItem="1oO-6P-yKS" firstAttribute="leading" secondItem="niA-9y-PqU" secondAttribute="leading" id="NJ0-sa-GHf"/>
+                            <constraint firstAttribute="trailing" secondItem="1oO-6P-yKS" secondAttribute="trailing" id="gys-WC-eY9"/>
+                            <constraint firstItem="GVl-iG-a51" firstAttribute="top" secondItem="1oO-6P-yKS" secondAttribute="bottom" id="r2a-Qm-rDU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapa" destination="1oO-6P-yKS" id="sjV-Ja-YKV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fPs-Dk-zKe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1101.5999999999999" y="114.69265367316342"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HSc-vX-u3Z">
+            <objects>
+                <navigationController id="XBi-2Q-bjb" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mSs-Do-HJK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Fsu-C3-EcH" kind="relationship" relationship="rootViewController" id="g1Q-SL-sQ9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M2b-aU-uyd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-576" y="115"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Zbr-yH-H25"/>
+    </inferredMetricsTieBreakers>
+</document>

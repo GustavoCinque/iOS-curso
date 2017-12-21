@@ -1,25 +1,26 @@
 //
-//  CGListaTarefasController.m
-//  MinhasNotasDiarias
+//  ViagensViewController.m
+//  Minhas Viagens
 //
-//  Created by Cast Group on 13/12/17.
+//  Created by Cast Group on 20/12/17.
 //  Copyright © 2017 Cast Group. All rights reserved.
 //
 
-#import "CGListaTarefasController.h"
-#import "CGTarefa+CoreDataClass.h"
+#import "ViagensViewController.h"
 #import "AppDelegate.h"
-#import "CGTarefaController.h"
+#import "Viagem+CoreDataClass.h"
+#import "MapaViewController.h"
 
-@interface CGListaTarefasController ()
+
+@interface ViagensViewController ()
 
 @property (nonatomic, strong, readonly) NSManagedObjectContext *gerenciadorObjetos;
 
-@property(nonatomic, strong) NSArray<NSManagedObject*> *notas;
+@property(nonatomic, strong) NSArray<NSManagedObject*> *viagens;
 
 @end
 
-@implementation CGListaTarefasController
+@implementation ViagensViewController
 
 @synthesize gerenciadorObjetos = _gerenciadorObjetos;
 
@@ -28,6 +29,7 @@
 }
 
 - (NSManagedObjectContext*) gerenciadorObjetos{
+    
     if (!_gerenciadorObjetos) {
         AppDelegate *delegate =  (AppDelegate*)[UIApplication sharedApplication].delegate;
         _gerenciadorObjetos =  delegate.persistentContainer.viewContext;
@@ -35,17 +37,15 @@
     return _gerenciadorObjetos;
 }
 
-
-- (void)viewWillAppear:(BOOL)animated {
-    
+-(void)viewWillAppear:(BOOL)animated {
     NSError *error = nil;
-    NSFetchRequest *request = [CGTarefa fetchRequest];
+    NSFetchRequest *request = [Viagem fetchRequest];
     
-    NSSortDescriptor *sortDescriptor= [NSSortDescriptor sortDescriptorWithKey:@"identificador" ascending:NO];
+    NSSortDescriptor *sortDescriptor= [NSSortDescriptor sortDescriptorWithKey:@"latitude" ascending:NO];
     [request setSortDescriptors:@[sortDescriptor]];
     
-    self.notas = [self.gerenciadorObjetos executeFetchRequest:request error:&error];
-       
+    self.viagens = [self.gerenciadorObjetos executeFetchRequest:request error:&error];
+    
     [self.tableView reloadData];
 }
 
@@ -61,28 +61,27 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    //return self.listaTarefas.count;
-    return self.notas.count;
+    return self.viagens.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"viagemCell" forIndexPath:indexPath];
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellTarefa" forIndexPath:indexPath];
-    
-    //NSString *sTarefa = self.listaTarefas[indexPath.row];
-    CGTarefa *sTarefa = self.notas[indexPath.row];
-    
-    //cell.textLabel.text = sTarefa;
-    cell.textLabel.text = sTarefa.nome;
-    
-    NSDateFormatter *formatter = [NSDateFormatter new];
-    [formatter setDateFormat:@"dd/MM/yyyy hh:mm"];
-    cell.detailTextLabel.text = [formatter stringFromDate:sTarefa.data];
+    Viagem *viagem = self.viagens[indexPath.row];
+    cell.textLabel.text = viagem.descricao;
     
     return cell;
 }
-
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    if([segue.identifier isEqualToString:@"segueCell"]) {
+        NSIndexPath *path = [self.tableView indexPathForCell:sender];
+        MapaViewController *mapa = segue.destinationViewController;
+        mapa.viagemApresentacao = self.viagens[path.row];
+    }
+    
+}
 
 /*
 // Override to support conditional editing of the table view.
@@ -92,26 +91,28 @@
 }
 */
 
-
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [self.gerenciadorObjetos deleteObject:self.notas[indexPath.row]];
+        [self.gerenciadorObjetos deleteObject:self.viagens[indexPath.row]];
         NSError *error = nil;
         [self.gerenciadorObjetos save:&error];
         [self viewWillAppear:true];
     }
 }
 
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if([segue.identifier  isEqual: @"segueAlteracao"] ) {
-        NSIndexPath *path = [self.tableView indexPathForCell:sender];
-        CGTarefaController *tarefa = segue.destinationViewController;
-        tarefa.tarefaParaAlteracao = self.notas[path.row];
-    }
-    
+/*
+// Override to support editing the table view.
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        // Delete the row from the data source
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
+        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+    }   
 }
+*/
 
 /*
 // Override to support rearranging the table view.
