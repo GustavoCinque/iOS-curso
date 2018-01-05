@@ -14,7 +14,9 @@
 
 @end
 
-@implementation ViewController
+@implementation ViewController {
+    UIViewController *viewController;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,6 +36,8 @@
 -(void) recuperaValorBitcoin {
     
     [_btnAtualizar setTitle:@"Atualizando" forState:UIControlStateNormal];
+    
+    [self exibeLoadingViewController];
     
     NSURL *url = [NSURL URLWithString:@"https://blockchain.info/pt/ticker"];
     
@@ -55,17 +59,28 @@
                 dispatch_async(dispatch_get_main_queue(), ^{
                     self.valorBitcoin.text = [NSString stringWithFormat:@"%@ %@", symbol, [format stringFromNumber:@(preco.doubleValue)]];
                     [_btnAtualizar setTitle:@"Atualizar" forState:UIControlStateNormal];
+                    
                 });
+                [self ocultaLoadingViewController];
             } else {
                 NSLog(@"%@", error.description);
             }
         } else {
             NSLog(@"%@", error.description);
         }
-        
     }] resume];
     
-    
+}
+
+-(void) exibeLoadingViewController {
+    viewController = [[UIStoryboard storyboardWithName:@"Utils" bundle:nil] instantiateViewControllerWithIdentifier:@"loading"];
+    [self presentViewController:viewController animated:YES completion:nil];
+}
+
+-(void) ocultaLoadingViewController {
+    if(viewController) {
+        [viewController dismissViewControllerAnimated:YES completion:nil];
+    }
 }
 
 @end

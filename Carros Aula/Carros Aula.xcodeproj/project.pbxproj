@@ -1,0 +1,894 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D61E6D31FF6DA1500944939 /* SMXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D61E6D21FF6DA1500944939 /* SMXMLDocument.m */; };
+		2D61E6D61FF6DEB800944939 /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D61E6D51FF6DEB800944939 /* NSString+Utils.m */; };
+		2D61E6EE1FF6E23200944939 /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D61E6D91FF6E23200944939 /* JSONValueTransformer.m */; };
+		2D61E6EF1FF6E23200944939 /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D61E6DC1FF6E23200944939 /* JSONKeyMapper.m */; };
+		2D61E6F01FF6E23200944939 /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D61E6DE1FF6E23200944939 /* JSONModel.m */; };
+		2D61E6F11FF6E23200944939 /* JSONModelError.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D61E6DF1FF6E23200944939 /* JSONModelError.m */; };
+		2D61E6F21FF6E23200944939 /* JSONModelClassProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D61E6E21FF6E23200944939 /* JSONModelClassProperty.m */; };
+		2D61E6F31FF6E23200944939 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D61E6E51FF6E23200944939 /* Info.plist */; };
+		2D61E6F41FF6E23200944939 /* JSONHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D61E6E81FF6E23200944939 /* JSONHTTPClient.m */; };
+		2D61E6F51FF6E23200944939 /* JSONAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D61E6E91FF6E23200944939 /* JSONAPI.m */; };
+		2D61E6F61FF6E23200944939 /* JSONModel+networking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D61E6ED1FF6E23200944939 /* JSONModel+networking.m */; };
+		2D61E6FA1FFD656700944939 /* Carros_Aula.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D61E6F81FFD656700944939 /* Carros_Aula.xcdatamodeld */; };
+		2D61E6FD1FFD66B800944939 /* CarroDBCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D61E6FC1FFD66B800944939 /* CarroDBCoreData.m */; };
+		2D950B521FF4385300D93A94 /* Carros_AulaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D950B511FF4385300D93A94 /* Carros_AulaTests.m */; };
+		2D950B5D1FF4385300D93A94 /* Carros_AulaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D950B5C1FF4385300D93A94 /* Carros_AulaUITests.m */; };
+		2D950BB81FF43B0300D93A94 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D950B991FF43B0200D93A94 /* Info.plist */; };
+		2D950BBA1FF43B0300D93A94 /* Main.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D950B9D1FF43B0200D93A94 /* Main.xcassets */; };
+		2D950BBB1FF43B0300D93A94 /* carros_classicos.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2D950B9F1FF43B0200D93A94 /* carros_classicos.xml */; };
+		2D950BBC1FF43B0300D93A94 /* carros_luxo.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2D950BA01FF43B0200D93A94 /* carros_luxo.xml */; };
+		2D950BBD1FF43B0300D93A94 /* carros_esportivos.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2D950BA11FF43B0200D93A94 /* carros_esportivos.xml */; };
+		2D950BBE1FF43B0300D93A94 /* carros_classicos.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D950BA31FF43B0200D93A94 /* carros_classicos.json */; };
+		2D950BBF1FF43B0300D93A94 /* carros_luxo.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D950BA41FF43B0200D93A94 /* carros_luxo.json */; };
+		2D950BC01FF43B0300D93A94 /* carros_esportivos.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D950BA51FF43B0200D93A94 /* carros_esportivos.json */; };
+		2D950BC11FF43B0300D93A94 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D950BA91FF43B0200D93A94 /* main.m */; };
+		2D950BC21FF43B0300D93A94 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D950BAA1FF43B0200D93A94 /* AppDelegate.m */; };
+		2D950BC41FF43B0300D93A94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D950BB41FF43B0300D93A94 /* LaunchScreen.storyboard */; };
+		2D950BC51FF43B0300D93A94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D950BB61FF43B0300D93A94 /* Main.storyboard */; };
+		2D950BC61FF43CA400D93A94 /* TabBar.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D950B9C1FF43B0200D93A94 /* TabBar.xcassets */; };
+		2D950BCA1FF441BA00D93A94 /* ListarCarrosController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D950BC91FF441BA00D93A94 /* ListarCarrosController.m */; };
+		2D950BD41FF4476800D93A94 /* CarroCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D950BD21FF4476800D93A94 /* CarroCell.m */; };
+		2D950BD51FF4476800D93A94 /* CarroCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D950BD31FF4476800D93A94 /* CarroCell.xib */; };
+		2D950BD81FF44D1200D93A94 /* CarrosService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D950BD71FF44D1200D93A94 /* CarrosService.m */; };
+		2D950BDB1FF44E9A00D93A94 /* Carro.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D950BDA1FF44E9A00D93A94 /* Carro.m */; };
+		2D950BDF1FF58A8900D93A94 /* XMLCarroParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D950BDE1FF58A8900D93A94 /* XMLCarroParser.m */; };
+		AD614C311FFEABF4002DC400 /* AsyncDownloadImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD614C301FFEABF4002DC400 /* AsyncDownloadImageView.m */; };
+		AD614C351FFEC1B2002DC400 /* ServiceUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = AD614C341FFEC1B2002DC400 /* ServiceUserDefaults.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2D950B4E1FF4385300D93A94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D950B291FF4385300D93A94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D950B301FF4385300D93A94;
+			remoteInfo = "Carros Aula";
+		};
+		2D950B591FF4385300D93A94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D950B291FF4385300D93A94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D950B301FF4385300D93A94;
+			remoteInfo = "Carros Aula";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2D61E6D11FF6DA1500944939 /* SMXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMXMLDocument.h; sourceTree = "<group>"; };
+		2D61E6D21FF6DA1500944939 /* SMXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMXMLDocument.m; sourceTree = "<group>"; };
+		2D61E6D41FF6DEB800944939 /* NSString+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utils.h"; sourceTree = "<group>"; };
+		2D61E6D51FF6DEB800944939 /* NSString+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utils.m"; sourceTree = "<group>"; };
+		2D61E6D91FF6E23200944939 /* JSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONValueTransformer.m; sourceTree = "<group>"; };
+		2D61E6DA1FF6E23200944939 /* JSONKeyMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKeyMapper.h; sourceTree = "<group>"; };
+		2D61E6DB1FF6E23200944939 /* JSONValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONValueTransformer.h; sourceTree = "<group>"; };
+		2D61E6DC1FF6E23200944939 /* JSONKeyMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKeyMapper.m; sourceTree = "<group>"; };
+		2D61E6DE1FF6E23200944939 /* JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModel.m; sourceTree = "<group>"; };
+		2D61E6DF1FF6E23200944939 /* JSONModelError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelError.m; sourceTree = "<group>"; };
+		2D61E6E01FF6E23200944939 /* JSONModelClassProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelClassProperty.h; sourceTree = "<group>"; };
+		2D61E6E11FF6E23200944939 /* JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModel.h; sourceTree = "<group>"; };
+		2D61E6E21FF6E23200944939 /* JSONModelClassProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelClassProperty.m; sourceTree = "<group>"; };
+		2D61E6E31FF6E23200944939 /* JSONModelError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelError.h; sourceTree = "<group>"; };
+		2D61E6E41FF6E23200944939 /* JSONModel.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = JSONModel.modulemap; sourceTree = "<group>"; };
+		2D61E6E51FF6E23200944939 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D61E6E61FF6E23200944939 /* JSONModelLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelLib.h; sourceTree = "<group>"; };
+		2D61E6E81FF6E23200944939 /* JSONHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONHTTPClient.m; sourceTree = "<group>"; };
+		2D61E6E91FF6E23200944939 /* JSONAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONAPI.m; sourceTree = "<group>"; };
+		2D61E6EA1FF6E23200944939 /* JSONModel+networking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONModel+networking.h"; sourceTree = "<group>"; };
+		2D61E6EB1FF6E23200944939 /* JSONHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONHTTPClient.h; sourceTree = "<group>"; };
+		2D61E6EC1FF6E23200944939 /* JSONAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONAPI.h; sourceTree = "<group>"; };
+		2D61E6ED1FF6E23200944939 /* JSONModel+networking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONModel+networking.m"; sourceTree = "<group>"; };
+		2D61E6F91FFD656700944939 /* Carros_Aula.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Carros_Aula.xcdatamodel; sourceTree = "<group>"; };
+		2D61E6FB1FFD66B800944939 /* CarroDBCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarroDBCoreData.h; sourceTree = "<group>"; };
+		2D61E6FC1FFD66B800944939 /* CarroDBCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarroDBCoreData.m; sourceTree = "<group>"; };
+		2D950B311FF4385300D93A94 /* Carros Aula.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Carros Aula.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D950B4D1FF4385300D93A94 /* Carros AulaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Carros AulaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D950B511FF4385300D93A94 /* Carros_AulaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Carros_AulaTests.m; sourceTree = "<group>"; };
+		2D950B531FF4385300D93A94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D950B581FF4385300D93A94 /* Carros AulaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Carros AulaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D950B5C1FF4385300D93A94 /* Carros_AulaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Carros_AulaUITests.m; sourceTree = "<group>"; };
+		2D950B5E1FF4385300D93A94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D950B991FF43B0200D93A94 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D950B9C1FF43B0200D93A94 /* TabBar.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TabBar.xcassets; sourceTree = "<group>"; };
+		2D950B9D1FF43B0200D93A94 /* Main.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Main.xcassets; sourceTree = "<group>"; };
+		2D950B9F1FF43B0200D93A94 /* carros_classicos.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = carros_classicos.xml; sourceTree = "<group>"; };
+		2D950BA01FF43B0200D93A94 /* carros_luxo.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = carros_luxo.xml; sourceTree = "<group>"; };
+		2D950BA11FF43B0200D93A94 /* carros_esportivos.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = carros_esportivos.xml; sourceTree = "<group>"; };
+		2D950BA31FF43B0200D93A94 /* carros_classicos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = carros_classicos.json; sourceTree = "<group>"; };
+		2D950BA41FF43B0200D93A94 /* carros_luxo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = carros_luxo.json; sourceTree = "<group>"; };
+		2D950BA51FF43B0200D93A94 /* carros_esportivos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = carros_esportivos.json; sourceTree = "<group>"; };
+		2D950BA81FF43B0200D93A94 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2D950BA91FF43B0200D93A94 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2D950BAA1FF43B0200D93A94 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2D950BB51FF43B0300D93A94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2D950BB71FF43B0300D93A94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2D950BC81FF441BA00D93A94 /* ListarCarrosController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListarCarrosController.h; sourceTree = "<group>"; };
+		2D950BC91FF441BA00D93A94 /* ListarCarrosController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListarCarrosController.m; sourceTree = "<group>"; };
+		2D950BD11FF4476800D93A94 /* CarroCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarroCell.h; sourceTree = "<group>"; };
+		2D950BD21FF4476800D93A94 /* CarroCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarroCell.m; sourceTree = "<group>"; };
+		2D950BD31FF4476800D93A94 /* CarroCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarroCell.xib; sourceTree = "<group>"; };
+		2D950BD61FF44D1200D93A94 /* CarrosService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarrosService.h; sourceTree = "<group>"; };
+		2D950BD71FF44D1200D93A94 /* CarrosService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarrosService.m; sourceTree = "<group>"; };
+		2D950BD91FF44E9A00D93A94 /* Carro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Carro.h; sourceTree = "<group>"; };
+		2D950BDA1FF44E9A00D93A94 /* Carro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Carro.m; sourceTree = "<group>"; };
+		2D950BDD1FF58A8900D93A94 /* XMLCarroParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLCarroParser.h; sourceTree = "<group>"; };
+		2D950BDE1FF58A8900D93A94 /* XMLCarroParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLCarroParser.m; sourceTree = "<group>"; };
+		AD614C2F1FFEABF4002DC400 /* AsyncDownloadImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncDownloadImageView.h; sourceTree = "<group>"; };
+		AD614C301FFEABF4002DC400 /* AsyncDownloadImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncDownloadImageView.m; sourceTree = "<group>"; };
+		AD614C331FFEC1B2002DC400 /* ServiceUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceUserDefaults.h; sourceTree = "<group>"; };
+		AD614C341FFEC1B2002DC400 /* ServiceUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceUserDefaults.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D950B2E1FF4385300D93A94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D950B4A1FF4385300D93A94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D950B551FF4385300D93A94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D61E6CF1FF6DA1500944939 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				2D61E6D71FF6E23200944939 /* JSONModel */,
+				2D61E6D01FF6DA1500944939 /* XMLDocument */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		2D61E6D01FF6DA1500944939 /* XMLDocument */ = {
+			isa = PBXGroup;
+			children = (
+				2D61E6D11FF6DA1500944939 /* SMXMLDocument.h */,
+				2D61E6D21FF6DA1500944939 /* SMXMLDocument.m */,
+			);
+			path = XMLDocument;
+			sourceTree = "<group>";
+		};
+		2D61E6D71FF6E23200944939 /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				2D61E6D81FF6E23200944939 /* JSONModelTransformations */,
+				2D61E6DD1FF6E23200944939 /* JSONModel */,
+				2D61E6E41FF6E23200944939 /* JSONModel.modulemap */,
+				2D61E6E51FF6E23200944939 /* Info.plist */,
+				2D61E6E61FF6E23200944939 /* JSONModelLib.h */,
+				2D61E6E71FF6E23200944939 /* JSONModelNetworking */,
+			);
+			path = JSONModel;
+			sourceTree = "<group>";
+		};
+		2D61E6D81FF6E23200944939 /* JSONModelTransformations */ = {
+			isa = PBXGroup;
+			children = (
+				2D61E6D91FF6E23200944939 /* JSONValueTransformer.m */,
+				2D61E6DA1FF6E23200944939 /* JSONKeyMapper.h */,
+				2D61E6DB1FF6E23200944939 /* JSONValueTransformer.h */,
+				2D61E6DC1FF6E23200944939 /* JSONKeyMapper.m */,
+			);
+			path = JSONModelTransformations;
+			sourceTree = "<group>";
+		};
+		2D61E6DD1FF6E23200944939 /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				2D61E6DE1FF6E23200944939 /* JSONModel.m */,
+				2D61E6DF1FF6E23200944939 /* JSONModelError.m */,
+				2D61E6E01FF6E23200944939 /* JSONModelClassProperty.h */,
+				2D61E6E11FF6E23200944939 /* JSONModel.h */,
+				2D61E6E21FF6E23200944939 /* JSONModelClassProperty.m */,
+				2D61E6E31FF6E23200944939 /* JSONModelError.h */,
+			);
+			path = JSONModel;
+			sourceTree = "<group>";
+		};
+		2D61E6E71FF6E23200944939 /* JSONModelNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				2D61E6E81FF6E23200944939 /* JSONHTTPClient.m */,
+				2D61E6E91FF6E23200944939 /* JSONAPI.m */,
+				2D61E6EA1FF6E23200944939 /* JSONModel+networking.h */,
+				2D61E6EB1FF6E23200944939 /* JSONHTTPClient.h */,
+				2D61E6EC1FF6E23200944939 /* JSONAPI.h */,
+				2D61E6ED1FF6E23200944939 /* JSONModel+networking.m */,
+			);
+			path = JSONModelNetworking;
+			sourceTree = "<group>";
+		};
+		2D61E6F71FFD656700944939 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				2D61E6FB1FFD66B800944939 /* CarroDBCoreData.h */,
+				2D61E6FC1FFD66B800944939 /* CarroDBCoreData.m */,
+				2D61E6F81FFD656700944939 /* Carros_Aula.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		2D950B281FF4385300D93A94 = {
+			isa = PBXGroup;
+			children = (
+				2D950B331FF4385300D93A94 /* Carros Aula */,
+				2D950B501FF4385300D93A94 /* Carros AulaTests */,
+				2D950B5B1FF4385300D93A94 /* Carros AulaUITests */,
+				2D950B321FF4385300D93A94 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2D950B321FF4385300D93A94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D950B311FF4385300D93A94 /* Carros Aula.app */,
+				2D950B4D1FF4385300D93A94 /* Carros AulaTests.xctest */,
+				2D950B581FF4385300D93A94 /* Carros AulaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D950B331FF4385300D93A94 /* Carros Aula */ = {
+			isa = PBXGroup;
+			children = (
+				2D950B981FF43B0200D93A94 /* Config */,
+				2D950B9A1FF43B0200D93A94 /* Resources */,
+				2D950BA61FF43B0200D93A94 /* Sources */,
+				2D950BB31FF43B0300D93A94 /* Userinterface */,
+			);
+			path = "Carros Aula";
+			sourceTree = "<group>";
+		};
+		2D950B501FF4385300D93A94 /* Carros AulaTests */ = {
+			isa = PBXGroup;
+			children = (
+				2D950B511FF4385300D93A94 /* Carros_AulaTests.m */,
+				2D950B531FF4385300D93A94 /* Info.plist */,
+			);
+			path = "Carros AulaTests";
+			sourceTree = "<group>";
+		};
+		2D950B5B1FF4385300D93A94 /* Carros AulaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2D950B5C1FF4385300D93A94 /* Carros_AulaUITests.m */,
+				2D950B5E1FF4385300D93A94 /* Info.plist */,
+			);
+			path = "Carros AulaUITests";
+			sourceTree = "<group>";
+		};
+		2D950B981FF43B0200D93A94 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				2D950B991FF43B0200D93A94 /* Info.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		2D950B9A1FF43B0200D93A94 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2D950B9B1FF43B0200D93A94 /* xcassets */,
+				2D950B9E1FF43B0200D93A94 /* xml */,
+				2D950BA21FF43B0200D93A94 /* json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2D950B9B1FF43B0200D93A94 /* xcassets */ = {
+			isa = PBXGroup;
+			children = (
+				2D950B9C1FF43B0200D93A94 /* TabBar.xcassets */,
+				2D950B9D1FF43B0200D93A94 /* Main.xcassets */,
+			);
+			path = xcassets;
+			sourceTree = "<group>";
+		};
+		2D950B9E1FF43B0200D93A94 /* xml */ = {
+			isa = PBXGroup;
+			children = (
+				2D950B9F1FF43B0200D93A94 /* carros_classicos.xml */,
+				2D950BA01FF43B0200D93A94 /* carros_luxo.xml */,
+				2D950BA11FF43B0200D93A94 /* carros_esportivos.xml */,
+			);
+			path = xml;
+			sourceTree = "<group>";
+		};
+		2D950BA21FF43B0200D93A94 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				2D950BA31FF43B0200D93A94 /* carros_classicos.json */,
+				2D950BA41FF43B0200D93A94 /* carros_luxo.json */,
+				2D950BA51FF43B0200D93A94 /* carros_esportivos.json */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		2D950BA61FF43B0200D93A94 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2D950BA71FF43B0200D93A94 /* Misc */,
+				2D950BAB1FF43B0300D93A94 /* DAO */,
+				2D950BAE1FF43B0300D93A94 /* Dependencies */,
+				2D950BAF1FF43B0300D93A94 /* Models */,
+				2D950BB01FF43B0300D93A94 /* Controllers */,
+				2D950BB11FF43B0300D93A94 /* Categories */,
+				2D950BB21FF43B0300D93A94 /* Services */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		2D950BA71FF43B0200D93A94 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				2D950BA81FF43B0200D93A94 /* AppDelegate.h */,
+				2D950BA91FF43B0200D93A94 /* main.m */,
+				2D950BAA1FF43B0200D93A94 /* AppDelegate.m */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		2D950BAB1FF43B0300D93A94 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				AD614C321FFEC19B002DC400 /* UserDefaults */,
+				2D61E6F71FFD656700944939 /* CoreData */,
+				2D950BDC1FF58A2A00D93A94 /* XMLParser */,
+			);
+			path = DAO;
+			sourceTree = "<group>";
+		};
+		2D950BAE1FF43B0300D93A94 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				AD614C2E1FFEAAC9002DC400 /* Utils */,
+				2D61E6CF1FF6DA1500944939 /* Libs */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		2D950BAF1FF43B0300D93A94 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2D950BD91FF44E9A00D93A94 /* Carro.h */,
+				2D950BDA1FF44E9A00D93A94 /* Carro.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2D950BB01FF43B0300D93A94 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2D950BC71FF4413800D93A94 /* ListarCarrosController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2D950BB11FF43B0300D93A94 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				2D61E6D41FF6DEB800944939 /* NSString+Utils.h */,
+				2D61E6D51FF6DEB800944939 /* NSString+Utils.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		2D950BB21FF43B0300D93A94 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2D950BD61FF44D1200D93A94 /* CarrosService.h */,
+				2D950BD71FF44D1200D93A94 /* CarrosService.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2D950BB31FF43B0300D93A94 /* Userinterface */ = {
+			isa = PBXGroup;
+			children = (
+				2D950BB41FF43B0300D93A94 /* LaunchScreen.storyboard */,
+				2D950BB61FF43B0300D93A94 /* Main.storyboard */,
+			);
+			path = Userinterface;
+			sourceTree = "<group>";
+		};
+		2D950BC71FF4413800D93A94 /* ListarCarrosController */ = {
+			isa = PBXGroup;
+			children = (
+				2D950BCB1FF4454500D93A94 /* Cell */,
+				2D950BC81FF441BA00D93A94 /* ListarCarrosController.h */,
+				2D950BC91FF441BA00D93A94 /* ListarCarrosController.m */,
+			);
+			path = ListarCarrosController;
+			sourceTree = "<group>";
+		};
+		2D950BCB1FF4454500D93A94 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2D950BD11FF4476800D93A94 /* CarroCell.h */,
+				2D950BD21FF4476800D93A94 /* CarroCell.m */,
+				2D950BD31FF4476800D93A94 /* CarroCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		2D950BDC1FF58A2A00D93A94 /* XMLParser */ = {
+			isa = PBXGroup;
+			children = (
+				2D950BDD1FF58A8900D93A94 /* XMLCarroParser.h */,
+				2D950BDE1FF58A8900D93A94 /* XMLCarroParser.m */,
+			);
+			path = XMLParser;
+			sourceTree = "<group>";
+		};
+		AD614C2E1FFEAAC9002DC400 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AD614C2F1FFEABF4002DC400 /* AsyncDownloadImageView.h */,
+				AD614C301FFEABF4002DC400 /* AsyncDownloadImageView.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		AD614C321FFEC19B002DC400 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				AD614C331FFEC1B2002DC400 /* ServiceUserDefaults.h */,
+				AD614C341FFEC1B2002DC400 /* ServiceUserDefaults.m */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D950B301FF4385300D93A94 /* Carros Aula */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D950B611FF4385300D93A94 /* Build configuration list for PBXNativeTarget "Carros Aula" */;
+			buildPhases = (
+				2D950B2D1FF4385300D93A94 /* Sources */,
+				2D950B2E1FF4385300D93A94 /* Frameworks */,
+				2D950B2F1FF4385300D93A94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Carros Aula";
+			productName = "Carros Aula";
+			productReference = 2D950B311FF4385300D93A94 /* Carros Aula.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D950B4C1FF4385300D93A94 /* Carros AulaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D950B641FF4385300D93A94 /* Build configuration list for PBXNativeTarget "Carros AulaTests" */;
+			buildPhases = (
+				2D950B491FF4385300D93A94 /* Sources */,
+				2D950B4A1FF4385300D93A94 /* Frameworks */,
+				2D950B4B1FF4385300D93A94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D950B4F1FF4385300D93A94 /* PBXTargetDependency */,
+			);
+			name = "Carros AulaTests";
+			productName = "Carros AulaTests";
+			productReference = 2D950B4D1FF4385300D93A94 /* Carros AulaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2D950B571FF4385300D93A94 /* Carros AulaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D950B671FF4385300D93A94 /* Build configuration list for PBXNativeTarget "Carros AulaUITests" */;
+			buildPhases = (
+				2D950B541FF4385300D93A94 /* Sources */,
+				2D950B551FF4385300D93A94 /* Frameworks */,
+				2D950B561FF4385300D93A94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D950B5A1FF4385300D93A94 /* PBXTargetDependency */,
+			);
+			name = "Carros AulaUITests";
+			productName = "Carros AulaUITests";
+			productReference = 2D950B581FF4385300D93A94 /* Carros AulaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D950B291FF4385300D93A94 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Cast Group";
+				TargetAttributes = {
+					2D950B301FF4385300D93A94 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+					};
+					2D950B4C1FF4385300D93A94 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2D950B301FF4385300D93A94;
+					};
+					2D950B571FF4385300D93A94 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2D950B301FF4385300D93A94;
+					};
+				};
+			};
+			buildConfigurationList = 2D950B2C1FF4385300D93A94 /* Build configuration list for PBXProject "Carros Aula" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2D950B281FF4385300D93A94;
+			productRefGroup = 2D950B321FF4385300D93A94 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D950B301FF4385300D93A94 /* Carros Aula */,
+				2D950B4C1FF4385300D93A94 /* Carros AulaTests */,
+				2D950B571FF4385300D93A94 /* Carros AulaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D950B2F1FF4385300D93A94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D950BBB1FF43B0300D93A94 /* carros_classicos.xml in Resources */,
+				2D950BD51FF4476800D93A94 /* CarroCell.xib in Resources */,
+				2D950BC61FF43CA400D93A94 /* TabBar.xcassets in Resources */,
+				2D950BBF1FF43B0300D93A94 /* carros_luxo.json in Resources */,
+				2D950BB81FF43B0300D93A94 /* Info.plist in Resources */,
+				2D950BC41FF43B0300D93A94 /* LaunchScreen.storyboard in Resources */,
+				2D950BBA1FF43B0300D93A94 /* Main.xcassets in Resources */,
+				2D950BC51FF43B0300D93A94 /* Main.storyboard in Resources */,
+				2D950BBD1FF43B0300D93A94 /* carros_esportivos.xml in Resources */,
+				2D950BBE1FF43B0300D93A94 /* carros_classicos.json in Resources */,
+				2D950BBC1FF43B0300D93A94 /* carros_luxo.xml in Resources */,
+				2D950BC01FF43B0300D93A94 /* carros_esportivos.json in Resources */,
+				2D61E6F31FF6E23200944939 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D950B4B1FF4385300D93A94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D950B561FF4385300D93A94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D950B2D1FF4385300D93A94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D950BDF1FF58A8900D93A94 /* XMLCarroParser.m in Sources */,
+				2D950BCA1FF441BA00D93A94 /* ListarCarrosController.m in Sources */,
+				2D61E6F21FF6E23200944939 /* JSONModelClassProperty.m in Sources */,
+				2D950BD41FF4476800D93A94 /* CarroCell.m in Sources */,
+				2D61E6F41FF6E23200944939 /* JSONHTTPClient.m in Sources */,
+				2D950BC21FF43B0300D93A94 /* AppDelegate.m in Sources */,
+				2D61E6F51FF6E23200944939 /* JSONAPI.m in Sources */,
+				AD614C351FFEC1B2002DC400 /* ServiceUserDefaults.m in Sources */,
+				2D61E6D31FF6DA1500944939 /* SMXMLDocument.m in Sources */,
+				2D61E6EF1FF6E23200944939 /* JSONKeyMapper.m in Sources */,
+				2D61E6EE1FF6E23200944939 /* JSONValueTransformer.m in Sources */,
+				2D61E6F11FF6E23200944939 /* JSONModelError.m in Sources */,
+				AD614C311FFEABF4002DC400 /* AsyncDownloadImageView.m in Sources */,
+				2D950BC11FF43B0300D93A94 /* main.m in Sources */,
+				2D61E6F61FF6E23200944939 /* JSONModel+networking.m in Sources */,
+				2D61E6F01FF6E23200944939 /* JSONModel.m in Sources */,
+				2D61E6D61FF6DEB800944939 /* NSString+Utils.m in Sources */,
+				2D950BD81FF44D1200D93A94 /* CarrosService.m in Sources */,
+				2D61E6FA1FFD656700944939 /* Carros_Aula.xcdatamodeld in Sources */,
+				2D61E6FD1FFD66B800944939 /* CarroDBCoreData.m in Sources */,
+				2D950BDB1FF44E9A00D93A94 /* Carro.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D950B491FF4385300D93A94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D950B521FF4385300D93A94 /* Carros_AulaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D950B541FF4385300D93A94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D950B5D1FF4385300D93A94 /* Carros_AulaUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2D950B4F1FF4385300D93A94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D950B301FF4385300D93A94 /* Carros Aula */;
+			targetProxy = 2D950B4E1FF4385300D93A94 /* PBXContainerItemProxy */;
+		};
+		2D950B5A1FF4385300D93A94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D950B301FF4385300D93A94 /* Carros Aula */;
+			targetProxy = 2D950B591FF4385300D93A94 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2D950BB41FF43B0300D93A94 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D950BB51FF43B0300D93A94 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2D950BB61FF43B0300D93A94 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D950BB71FF43B0300D93A94 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2D950B5F1FF4385300D93A94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2D950B601FF4385300D93A94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2D950B621FF4385300D93A94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/Carros Aula/Config/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.castgroup.Carros-Aula";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2D950B631FF4385300D93A94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/Carros Aula/Config/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.castgroup.Carros-Aula";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2D950B651FF4385300D93A94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Carros AulaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.castgroup.Carros-AulaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Carros Aula.app/Carros Aula";
+			};
+			name = Debug;
+		};
+		2D950B661FF4385300D93A94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Carros AulaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.castgroup.Carros-AulaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Carros Aula.app/Carros Aula";
+			};
+			name = Release;
+		};
+		2D950B681FF4385300D93A94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Carros AulaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.castgroup.Carros-AulaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Carros Aula";
+			};
+			name = Debug;
+		};
+		2D950B691FF4385300D93A94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Carros AulaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.castgroup.Carros-AulaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Carros Aula";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D950B2C1FF4385300D93A94 /* Build configuration list for PBXProject "Carros Aula" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D950B5F1FF4385300D93A94 /* Debug */,
+				2D950B601FF4385300D93A94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D950B611FF4385300D93A94 /* Build configuration list for PBXNativeTarget "Carros Aula" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D950B621FF4385300D93A94 /* Debug */,
+				2D950B631FF4385300D93A94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D950B641FF4385300D93A94 /* Build configuration list for PBXNativeTarget "Carros AulaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D950B651FF4385300D93A94 /* Debug */,
+				2D950B661FF4385300D93A94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D950B671FF4385300D93A94 /* Build configuration list for PBXNativeTarget "Carros AulaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D950B681FF4385300D93A94 /* Debug */,
+				2D950B691FF4385300D93A94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2D61E6F81FFD656700944939 /* Carros_Aula.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2D61E6F91FFD656700944939 /* Carros_Aula.xcdatamodel */,
+			);
+			currentVersion = 2D61E6F91FFD656700944939 /* Carros_Aula.xcdatamodel */;
+			path = Carros_Aula.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2D950B291FF4385300D93A94 /* Project object */;
+}

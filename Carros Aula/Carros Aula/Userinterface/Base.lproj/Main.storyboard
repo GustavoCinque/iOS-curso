@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="17B1003" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eEz-3Z-X4X">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sobre-->
+        <scene sceneID="xb4-qu-NTA">
+            <objects>
+                <viewController id="VFP-Pa-1Nn" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EAg-xy-jNE"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ovl-AB-Cxx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eqU-Yf-Z5M">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Sobre" image="tab_sobre" id="t8d-aL-uEI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xHS-g3-D4b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-63" y="218"/>
+        </scene>
+        <!--Lista de Carros-->
+        <scene sceneID="Qfb-sU-kjH">
+            <objects>
+                <viewController id="RzX-uE-Z9e" customClass="ListarCarrosController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LV4-Kq-Buz"/>
+                        <viewControllerLayoutGuide type="bottom" id="wMh-VD-qIG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rfg-Fi-FrC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Eb3-AA-Tdq">
+                                <rect key="frame" x="85" y="72" width="205" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="205" id="5ha-ox-lqu"/>
+                                    <constraint firstAttribute="height" constant="28" id="lmX-sx-PrY"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Clássicos"/>
+                                    <segment title="Esportivos"/>
+                                    <segment title="Luxo"/>
+                                </segments>
+                                <connections>
+                                    <action selector="atualizarTipoCarro:" destination="RzX-uE-Z9e" eventType="valueChanged" id="uzv-Pi-gej"/>
+                                </connections>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0tV-mT-nOi">
+                                <rect key="frame" x="0.0" y="108" width="375" height="510"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="0tV-mT-nOi" secondAttribute="trailing" id="4ay-R0-QIo"/>
+                            <constraint firstItem="wMh-VD-qIG" firstAttribute="top" secondItem="0tV-mT-nOi" secondAttribute="bottom" id="5iY-EG-ure"/>
+                            <constraint firstItem="0tV-mT-nOi" firstAttribute="top" secondItem="Eb3-AA-Tdq" secondAttribute="bottom" constant="8" id="LqV-8V-wsq"/>
+                            <constraint firstItem="Eb3-AA-Tdq" firstAttribute="centerX" secondItem="Rfg-Fi-FrC" secondAttribute="centerX" id="a1D-J5-cr4"/>
+                            <constraint firstItem="Eb3-AA-Tdq" firstAttribute="top" secondItem="LV4-Kq-Buz" secondAttribute="bottom" constant="8" id="toj-Yf-3hO"/>
+                            <constraint firstItem="0tV-mT-nOi" firstAttribute="leading" secondItem="Rfg-Fi-FrC" secondAttribute="leading" id="y1N-fC-WGr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Lista de Carros" id="5s5-Pi-ZnV">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="vxD-Jh-zd7">
+                            <connections>
+                                <action selector="atualizar:" destination="RzX-uE-Z9e" id="LDT-Gj-qhn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="segmentControl" destination="Eb3-AA-Tdq" id="dGs-n1-gzd"/>
+                        <outlet property="tableView" destination="0tV-mT-nOi" id="vyY-gS-ZVI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DXG-ge-tqk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="876" y="-437.63118440779613"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="iJA-MU-ryd">
+            <objects>
+                <tabBarController id="eEz-3Z-X4X" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="fvG-Qy-sq8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="LLM-eE-EDY" kind="relationship" relationship="viewControllers" id="h4L-yc-43E"/>
+                        <segue destination="VFP-Pa-1Nn" kind="relationship" relationship="viewControllers" id="dtY-j6-aRf"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X8R-74-Lap" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1016" y="-110"/>
+        </scene>
+        <!--Carros-->
+        <scene sceneID="Oss-jH-eZG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LLM-eE-EDY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Carros" image="tab_carros" id="pAO-0Q-wZn"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ro2-ut-i2X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="RzX-uE-Z9e" kind="relationship" relationship="rootViewController" id="g1a-bg-pYg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rvd-PZ-HdP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-63.200000000000003" y="-437.63118440779613"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tab_carros" width="30" height="30"/>
+        <image name="tab_sobre" width="30" height="30"/>
+    </resources>
+</document>
