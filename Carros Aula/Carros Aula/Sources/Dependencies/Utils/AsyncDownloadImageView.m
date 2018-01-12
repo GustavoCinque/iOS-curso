@@ -63,13 +63,13 @@
     NSString *stringWithString =[NSString stringWithString:appendida];
     NSString *stringFile = [NSHomeDirectory() stringByAppendingString:stringWithString];
     
-    if([[NSFileManager defaultManager] fileExistsAtPath:stringFile]) {
+    /*if([[NSFileManager defaultManager] fileExistsAtPath:stringFile]) {
         NSData *data = [NSData dataWithContentsOfFile:stringFile];
         if(data) {
             UIImage *img = [UIImage imageWithData:data];
             [self performSelectorOnMainThread:@selector(apresentaImagem:) withObject:img waitUntilDone:YES];
         }
-    }
+    }*/
     
     NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:self.urlFoto]];
     UIImage *imagem = [UIImage imageWithData:data];
